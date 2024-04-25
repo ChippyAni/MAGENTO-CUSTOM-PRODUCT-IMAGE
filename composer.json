@@ -1,0 +1,17 @@
+{
+    "name": "azguards/producttype",
+    "description": "Product external image based on product type attribute",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Azguards\\ProductType\\": ""
+        }
+    }
+}

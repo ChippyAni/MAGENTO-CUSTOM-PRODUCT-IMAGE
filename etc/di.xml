@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Azguards_ProductType
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Azguards\ProductType\Api\ProductTypeManagementInterface" type="Azguards\ProductType\Model\ProductTypeManagement" />
+</config>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Azguards_ProductType
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Block\Product\Image">
+      <plugin name="after_get_image_url_plugin" type="Azguards\ProductType\Plugin\AfterGetImageUrl"/>
+    </type>
+    <type name="Magento\Catalog\Block\Product\View\Gallery">
+      <plugin name="add_images_to_gallery" type="Azguards\ProductType\Plugin\AddImagesToGalleryBlock" />
+    </type>
+    <type name="Magento\Checkout\CustomerData\AbstractItem">
+    <plugin name="minicart_after_get_itemdata_plugin" type="Azguards\ProductType\Plugin\Minicart\AfterGetItemData"/>
+  </type>
+</config>
